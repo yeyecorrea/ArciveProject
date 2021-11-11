@@ -8,14 +8,13 @@ namespace ArciveProject
     {
         static void Main(string[] args)
         {
-             // variable que almacena el valor de retorno del metodo FindeFiles
+            // variable que almacena el valor de retorno del metodo FindeFiles
             var salesFiles = FindFiles("stores");
             foreach (var file in salesFiles)
             {
                 Console.WriteLine(file);
             }
         }
-        //funcion que retonar un tipo IEnumerable<string> y recibe como parametro un string
         static IEnumerable<string> FindFiles(string folderName)
         {
             // instanciamos una lista de strings
@@ -32,7 +31,7 @@ namespace ArciveProject
                 {
                     // añadimos a la lista el archivo
                     salesFiles.Add(file);
-                }
+                } 
             }
             return salesFiles;
         }
